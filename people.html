@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
         <meta charset="utf-8"/>
-        <title>onTV</title>
+        <title>onTV - People</title>
         <script src="https://cdn.tailwindcss.com"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +15,8 @@
         <script src="https://kit.fontawesome.com/027828918f.js" crossorigin="anonymous"></script>
 
     </head>
-
-    <body id="home-page">
+    
+    <body>
          <nav class="nav-bar bg-black border-b border-gray-300" >
             <div class="container mx-auto px-4 flex items-center gap-4 py-2">
                 <a class="text-4xl tracking-wider font-semibold text-yellow-300 brand-link" href="index.html">onTV</a>
@@ -27,29 +27,29 @@
                     </button>
 
                     <div class="hidden md:block" id="navbarNav">
-                        <ul class="flex flex-col md:flex-row gap-3 md:gap-4">
+                        <ul class="flex flex-col md:flex-row gap-2 md:gap-4">
                             <li>
-                                <a class="text-gray-400 hover:text-yellow-400" href="shows.html">Shows</a>
+                                <a class="text-gray-700 hover:text-blue-600" href="shows.html">Shows</a>
                             </li>
                             <li>
-                                <a class="text-gray-400 hover:text-yellow-400" href="people.html">People</a>
+                                <a class="text-gray-700 hover:text-blue-600" href="people.html">People</a>
                             </li>
                             <li>
-                                <a class="ml-5 text-gray-300 hover:text-yellow-400" href="search.html">Search</a>
+                                <a class="text-gray-300 hover:text-yellow-400" href="search.html">Search</a>
                             </li>
                         </ul>
                     </div>
             </div>
         </nav>
 
-        <div class="p-12 mb-4 bg-gray-100 jumbotron">
-            <div>
-                <h1 class="text-5xl font-bold">Welcome to onTv</h1>
-                <p class="md:w-2/3 text-2xl">
-                    Best place to lookup all of your favorite shows, articles and more!
-                </p>
-            </div>
-
+        <div class="mt-3 text-xl">
+            <div class="container mx-auto px-4">
+                <h1 class="text=4xl">Some of your favorite: </h1>
+                <div id="recomResults" class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4"></div>
+            </div>        
         </div>
+
+        <script src="./js/people.js"></script>
+
     </body>
 </html>
